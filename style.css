@@ -136,6 +136,47 @@ section {
     border-radius: 5px;
     text-align: center;
 }
+/* Add hover effect for image boxes */
+.image-box .big-image img {
+    transition: transform 0.3s ease; /* Add smooth transition for big image */
+}
+
+.image-box .small-image img {
+    transition: opacity 0.3s ease; /* Add smooth transition for small images */
+}
+
+/* Add hover effect for image text */
+.image-text {
+    opacity: 0.6; /* Set initial opacity to partially visible */
+    transition: opacity 0.3s ease; /* Add smooth transition */
+}
+
+.image-box .big-image:hover img {
+    transform: scale(1.1); /* Increase size of the image on hover */
+}
+
+.image-box .small-image:hover img {
+    opacity: 0.8; /* Reduce opacity of small images on hover */
+}
+
+/* Adjust opacity and positioning of image text on hover */
+.image-box:hover .image-text {
+    opacity: 1; /* Fully show image text on hover */
+}
+
+/* Add border highlight effect on hover */
+.image-box .big-image,
+.image-box .small-image {
+    border: 5px solid transparent; /* Initially set border color to transparent */
+    transition: border-color 0.3s ease; /* Add smooth transition for border color */
+}
+
+.image-box .big-image:hover,
+.image-box .small-image:hover {
+    border-color: rgb(138, 95, 8);/* Change border color to white on hover */
+}
+
+
 
 @media (max-width: 768px) {
     .hero-content {
