@@ -1,0 +1,190 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 98%;
+    margin: 0 auto;
+    position: relative; /* Set container to relative positioning */
+}
+
+header {
+    background-color: rgb(85, 73, 49);
+    color: #fff;
+    padding: 20px 0;
+    display: flex; /* Use flexbox for header layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically */
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    flex-grow: 1; /* Allow h1 to grow and take remaining space */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Use flexbox for nav layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+nav ul li {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 0;
+}
+
+#hero {
+    background-color: rgba(146, 143, 147, 0.466);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-box {
+    display: flex;
+    gap: 20px; /* Gap between big image and small images */
+}
+
+.big-image {
+    width: 60%;
+    position: relative;
+    overflow: hidden; /* Hide overflowing text */
+}
+
+.big-image img {
+    width: 100%;
+    height: 82vh;
+    border-radius: 5px;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.image-text h3,
+.image-text p {
+    color: #fff; /* Ensure text color is white */
+    margin: 0; /* Reset margin */
+}
+
+.image-text h3 {
+    font-size: 2em; /* Adjust font size as needed */
+    margin-bottom: 5px; /* Add spacing between title and description */
+}
+
+.image-text p {
+    font-size: 0.9em; /* Adjust font size as needed */
+}
+
+.small-images {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.small-image {
+    position: relative; /* Set position to relative */
+    overflow: hidden; /* Hide overflowing text */
+}
+
+.small-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.small-image .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big-image,
+    .small-images {
+        width: 100%;
+    }
+
+    .small-images {
+        margin-top: 20px;
+    }
+}
+
+#products {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
