@@ -17,7 +17,7 @@ li {
 }
 
 header {
-    background-color: rgb(85, 73, 49);
+    background-color: rgb(56, 79, 84);
     color: #fff;
     padding: 20px 0;
     display: flex; /* Use flexbox for header layout */
@@ -30,6 +30,69 @@ header h1 {
     margin-bottom: 10px;
     margin-left: 20px;
     flex-grow: 1; /* Allow h1 to grow and take remaining space */
+    margin-right: 20px;
+    padding-right: 10rem;
+}
+
+/* Adjust the size of the h1 and logo */
+.logo h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.logo img {
+    height: 4rem;
+    margin-right: 10px;
+}
+
+/* Position the search bar and logo */
+.search,
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the size of the search input */
+.search input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem; /* Match the font size of h1 */
+    width: 250px; /* Adjust width as needed */
+}
+
+.search button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+/* Add styles for the basket icon */
+.basket-icon {
+    margin-left: auto; /* Pushes the basket icon to the right */
+}
+
+.basket-icon a {
+    color: #f6f1f1; /* Adjust color as needed */
+    text-decoration: none;
+    margin-right: 20px; /* Add spacing between icon and search */
+}
+
+.basket-icon a:hover {
+    color: #161414; /* Adjust hover color as needed */
+}
+
+.basket-icon i {
+    font-size: 1.5rem; /* Adjust icon size as needed */
+}
+/* Center the navigation list */
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
@@ -136,6 +199,7 @@ section {
     border-radius: 5px;
     text-align: center;
 }
+
 /* Add hover effect for image boxes */
 .image-box .big-image img {
     transition: transform 0.3s ease; /* Add smooth transition for big image */

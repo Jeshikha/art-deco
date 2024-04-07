@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Decor Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Art Deco Logo" style="height: 4.5rem;">
-        <h1>Art Decor</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Art Deco Logo" style="height: 4rem;">
+            <h1>Art Deco</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -20,7 +24,18 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="basket-icon">
+            <a href="#"><i class="fa fa-shopping-basket"></i></a> <!-- Basket icon -->
+        </div>
+        <div class="search">
+            <form action="#" method="GET"> <!-- Search form -->
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button> <!-- Search icon -->
+            </form>
+        </div>
     </header>
+    
+    
 
     <section id="hero">
         <div class="container">
